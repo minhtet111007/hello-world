@@ -11,5 +11,8 @@ int main(void) {
   for (int i = 0; i < N; i++) {
     printf("%i. %s\n", i+1, foods[i]);
   }
+
+  int choice = get_int("What would you like to have? [1, 2, 3]: ");
+  printf("Here's your %s\n", foods[choice-1]);
   return 0;
 }
